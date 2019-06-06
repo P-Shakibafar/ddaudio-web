@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="fontiran.com:license" content="ZWCEA">
+
+        <title>رادیو فول‌استک :: ارائهٔ پادکست‌های آموزشی در حوزه‌های برنامه‌نویسی، شبکه، هوش مصنوعی، طراحی سایت، استارتاپ، کارآفرینی و ... </title>
+        <meta name="description" content="در رادیو فول‌استک سکان آکادمی، به ارائه‌ٔ مصاحبه‌های پادکستی در حوزه‌های برنامه‌نویسی، شبکه، هوش مصنوعی، طراحی سایت، استارتاپ و کارآفرینی و غیره با فعالان آی‌تی ایران خواهیم پرداخت">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/bootstrap.css" media="screen" rel="stylesheet" type="text/css">
+<link href="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/bootstrap-overrides.css" media="screen" rel="stylesheet" type="text/css">
+<link href="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/jquery.css" media="screen" rel="stylesheet" type="text/css">
+<link href="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/nprogress.css" media="screen" rel="stylesheet" type="text/css">
+<link href="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/font-awesome.css" media="screen" rel="stylesheet" type="text/css">
+<link href="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/styles-rtl.css" media="screen" rel="stylesheet" type="text/css">
+<link href="https://sokanacademy.com/img/main/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">        <script async="" src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/analytics.js"></script><script type="text/javascript" src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/tether.js"></script>
+        <script type="text/javascript" src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/jquery-2.js"></script>
+        <script type="text/javascript" src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/bootstrap.js" defer="defer"></script>
+        <script type="text/javascript" src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/layout.js" defer="defer"></script>
+        <script src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/api.js"></script>
+        <script src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/nprogress.js"></script>
+        <script src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/jquery.js"></script>
+        <script src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/jquery_002.js"></script>
+        <noscript>
+            <style>
+              .container, header, footer {
+                display:none;
+                display:none;
+              }
+            </style>
+        </noscript>
+            <style type="text/css">@font-face{
+    font-family: 'bnazanin';
+    src:'bnazanin.ttf';
+}
+.dideo-tooltip {
+    position: relative;
+    display: inline-block;
+    font-family: 'bnazanin';
+    margin-bottom: 2px;
+}
+
+.dideo-tooltip .tooltiptext {
+    visibility: hidden;
+    font-family: 'bnazanin';
+    width: 120px;
+    font-size: 13px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 110%;
+}
+.dideo-img{
+    width: 25px;
+    height: 25px;
+    margin-bottom: -7px;
+    filter: drop-shadow(0px 0px 2px #adadad);
+    webkit:filter: drop-shadow(0px 0px 2px #adadad);
+}
+.dideo-tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+.dideo-tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.srg{
+    min-width: 750px;
+}</style></head>
+    <body id="body">
+      <noscript>
+
+          <div id="no-script-div">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-sm-6 col-sm-offset-3">
+                          <img src="/img/main/logo.png" class="img-responsive" width="128" height="30" alt="سکان آکادمی" />
+                          <div class="script-guide" id="no-script-div-title">لطفا جاواسکریپت مرورگر خود را فعال سازید!</div>
+                          <div class="script-guide">
+                              <div class="script-guide-sub-heading"><i class="fa fa-chrome"></i> نحوهٔ فعال‌سازی در گوگل کروم</div>
+                              <ol>
+                                  <li>ابتدا روی منوی اصلی مرورگر گوگل کروم (۳ نقطه‌ای که در گوشهٔ بالا سمت راست قرار گرفته است) کلیک کرده سپس روی گزینهٔ Settings کلیک نمایید.</li>
+				  <li>سپس روی گزینهٔ Advanced در پایین صفحه کلیک نمایید تا تنظیمات بیشتری در معرض دیدتان قرار گیرد.</li>
+				  <li>در ادامه، در بخش Privacy and security روی گزینهٔ Content settings کلیک نمایید و  از میان گزینه‌های موجود، روی گزینهٔ JavaScript کلیک نمایید.</li>
+				  <li>همان‌طور که مشاهده می‌شود، گزینهٔ Blocked فعال است که با یک بار کلیک روی دکمهٔ مقابل آن، وضعیت به Allowed تغییر یافته و از این پس به سادگی قادر خواهید بود محتوای سکان آکادمی را مشاهده نمایید.</li>
+
+
+                              </ol>
+                          </div>
+                          <div class="script-guide">
+                              <div class="script-guide-sub-heading"><i class="fa fa-firefox"></i> نحوه فعال سازی در فایرفاکس</div>
+                              <ol>
+                                  <li>ابتدا در نوار جستجو عبارت about:config را تایپ کرده و اینتر کنید.</li>
+				  <li>در این مرحله به خاطر حساسیت تنظیمات فایرفاکس، هشداری در معرض دیدمان قرار می‌گیرد که با کلیک روی دکمهٔ !I accept the risk به مرحلهٔ بعد خواهیم رفت.</li>
+				  <li>در ادامه، لیستی از کلیهٔ تنظیمات فایرفاکس را مشاهده خواهیم کرد که با جستجوی عبارت javascript.enabled در نوار جستجو، می‌توانیم به تنظیمات جاوااسکریپت فایرفاکس دست یابیم.</li>
+				  <li>در نهایت، باید ۲ بار کلیک کرده یا اصطلاحاً دابل‌کلیک کنیم تا مقدار در نظر گرفته شده برای تب Value برابر با true گردد که در این صورت قابلیت جاوااسکریپت مرورگر فایرفاکس با موفقیت فعال شده است.</li>
+                              </ol>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </noscript>
+
+
+        <link rel="stylesheet" href="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/styles-header.css"><script> </script>
+        <!-- Modal -->
+        <div id="searchModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header hidden">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="header_search" role="search" action="/search" method="GET">
+                            <div class="input-group">
+                                <input type="text" class="form-control search" placeholder="جستجو" name="q">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default search-btn" type="submit" disabled="disabled">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="main_header">
+            <div class="top_header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-7 col-sm-3 col-md-3 user_btn top-header-cols">
+                                                            <div class="user_not_set">
+                                    <a href="https://sokanacademy.com/signup?redirect=/podcast" class="btn btn-primary" id="header-signup-btn">ثبت‌نام</a>
+                                    <a href="https://sokanacademy.com/signin?redirect=/podcast" class="btn btn-default" id="header-signin-btn">ورود</a>
+                                </div>
+                                
+                                <div data-toggle="modal" data-target="#searchModal" class="visible-xs mobile_search_btn"><i class="fa fa-search"></i></div>
+                        </div>
+                        <div class="hidden-xs col-sm-7 col-md-6 top-header-cols">
+                            <form class="header_search" role="search" action="/search" method="GET">
+                                <div class="input-group">
+                                    <input type="text" class="form-control search" placeholder="جستجو" name="q">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default search-btn" type="submit" disabled="disabled">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="top-search-res hidden">
+                                    <ul>
+                                        <!-- Search results for tags -->
+                                        <li><a href="#"><i class="fa fa-tag"></i> وب سایت</a></li>
+                                        <li><a href="#"><i class="fa fa-tag"></i> برنامه نویسی وب</a></li>
+                                        <li><a href="#"><i class="fa fa-tag"></i> وب و موبایل</a></li>
+                                        <!-- Search results for tags -->
+                                        <!-- Search results for contents -->
+                                        <li>
+                                            <a href="#">
+                                                <img class="" src="" alt="" title="" width="60" height="45">
+                                                <h5>
+                                                    ۱۰ زبان برتر برنامه نویسی وب درسال های آینده
+                                                    <br>
+                                                    <span>بهزاد مرادی</span>
+                                                </h5>
+                                            </a>
+                                        </li>
+                                        <!-- Search results for contents -->
+                                    </ul>
+                                    <button class="see-more-search">
+                                      مشاهده بیشتر ...
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-xs-5 col-sm-2 col-md-3 top-header-cols">
+                            <a href="https://sokanacademy.com/">
+                                <img class="img-responsive header_logo" src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/logo.png" alt="سکان آکادمی" title="سکان آکادمی" width="120" height="28">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="second_nav">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="wrapper">
+                                <a href="https://sokanacademy.com/mentoring" class="internal">
+                                    منتورینگ                                </a>
+                                <a href="https://sokanacademy.com/blog/all" class="internal">
+                                    وبلاگ                                </a>
+                                <a href="https://sokanacademy.com/plus" class="internal">
+                                    سکان‌پلاس                                </a>
+                                <a href="https://sokanacademy.com/courses" class="internal">
+                                    دوره‌های آموزشی                                </a>
+                                <a href="https://sokanacademy.com/podcast" class="internal">
+                                    رادیو فول‌استک                                </a>
+                                <a href="https://sokanacademy.com/forum" class="internal">
+                                    تالار گفتگو                                </a>
+                                <a href="https://sokanacademy.com/jobs/%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3" class="internal">
+                                    استخدام برنامه نویس                                </a>
+                                <a href="https://sokanacademy.com/glossary" class="internal">
+                                    واژه‌نامه                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="main_con inner_con">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Breadcrumbs -->
+                                            </div>
+                </div>
+            </div>
+            <link rel="stylesheet" href="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/styles-main.css"><script> </script>
+                        <link rel="stylesheet" href="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/main.css"><script> </script>
+<style>
+    .top-podcast:before {
+        width: 100%;
+        min-height: 450px;
+        background: #222 url("/images/2019/02/hamidreza-davoodi.jpg");
+        height: auto;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-bottom: 22px;
+        background-size: cover;
+        background-position: center;
+        -webkit-filter: blur(10px);
+        -moz-filter: blur(10px);
+        -o-filter: blur(10px);
+        -ms-filter: blur(10px);
+        filter: blur(10px);
+    }
+</style>
+
+<!-- Modal HTML -->
+<div id="modal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title"><i class="fa fa-microphone"></i> شرایط درخواست وقت مصاحبه </h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                در صورتی که جزو توسعه دهندگان و یا فعالان حوزه ی آی تی 
+هستید که در حوزه ی کار خود موفق عمل کرده‌اید و در صنعت نرم افزاری کشور 
+تأثیر گذار بوده اید -و یا کسانی را می‌شناسید که دارای چنین خصوصیتی 
+هستند- می‌توانید با ارسال درخواست خود به ایمیل sokanacademy@gmail.com و 
+ارائه ی اطلاعات زیر، از یک سو سکان آکادمی را در توسعه ی پادکست های مرتبط
+ با حوزه های فناوری به خصوص برنامه نویسی و توسعه ی اپلیکیشن یاری رسانده و
+ از سوی دیگر گامی مهم در راهنمایی رساندن به علاقمندان به این حوزه 
+بردارید:
+                <br><br>- نام و نام خانوادگی،<br>
+				- حوزه ی کار،<br>
+				- محل کار و آدرس وب سایت آن،<br>
+				- آدرس لینکدین،<br>
+				- کارهای شاخصی که انجام داده‌اید و …
+                </p>
+                <br>
+                <p>
+                لازم به ذکر است که پس از دریافت درخواست، ظرف مدت سه روز کاری نتیجه امر به اعلام خواهد شد.<br>
+                با تشکر<br>
+                ارادتمند<br>
+                تیم سکان آکادمی
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="inner-image-podcast">
+    <div class="top-podcast">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7 hidden-xs">
+                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/hamidreza-davoodi.jpg" class="img-responsive" alt="حمیدرضا داودی مهندس و معمار نرم‌افزار در کمپانی هلندی FastForward" title="حمیدرضا داودی مهندس و معمار نرم‌افزار در کمپانی هلندی FastForward" width="450" height="289">
+                </div>
+                <div class="col-sm-4">
+                    <div class="top-podcast-intro">
+                        <a href="https://sokanacademy.com/podcast/9976/%D8%AD%D9%85%DB%8C%D8%AF%D8%B1%D8%B6%D8%A7-%D8%AF%D8%A7%D9%88%D8%AF%DB%8C-%D9%85%D9%87%D9%86%D8%AF%D8%B3-%D9%88-%D9%85%D8%B9%D9%85%D8%A7%D8%B1-%D9%86%D8%B1%D9%85%E2%80%8C%D8%A7%D9%81%D8%B2%D8%A7%D8%B1-%D8%AF%D8%B1-%DA%A9%D9%85%D9%BE%D8%A7%D9%86%DB%8C-%D9%87%D9%84%D9%86%D8%AF%DB%8C-%D9%81%D8%B3%D8%AA%E2%80%8C%D9%81%D9%88%D8%B1%D9%88%D8%A7%D8%B1%D8%AF">
+                            <h1>حمیدرضا داودی</h1>
+                        </a>
+                        <p>حمیدرضا داودی در سال 1370 در شهر تهران به 
+دنیا آمده و آشنایی‌اش با کامپیوتر از سن ۱۲ سالگی شروع شد و سپس با 
+راهنمایی‌های کامیونیتی سابق تهران لاگ با دنیای لینوکس و برنامه ...</p>
+                        <a class="top-podcast-play" href="https://sokanacademy.com/podcast/9976/%D8%AD%D9%85%DB%8C%D8%AF%D8%B1%D8%B6%D8%A7-%D8%AF%D8%A7%D9%88%D8%AF%DB%8C-%D9%85%D9%87%D9%86%D8%AF%D8%B3-%D9%88-%D9%85%D8%B9%D9%85%D8%A7%D8%B1-%D9%86%D8%B1%D9%85%E2%80%8C%D8%A7%D9%81%D8%B2%D8%A7%D8%B1-%D8%AF%D8%B1-%DA%A9%D9%85%D9%BE%D8%A7%D9%86%DB%8C-%D9%87%D9%84%D9%86%D8%AF%DB%8C-%D9%81%D8%B3%D8%AA%E2%80%8C%D9%81%D9%88%D8%B1%D9%88%D8%A7%D8%B1%D8%AF">
+                            <i class="fa fa-comments-o"></i>
+                        </a>
+                                                    <p class="top-podcast-ask">
+                                <i class="fa fa-comments-o"></i> هنوز فرصت برای پرسش باقی است ...                            </p>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="newest-podcast-sec">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-sm-6">
+                <h3 class="title-newest"><i class="fa fa-microphone"></i> آخرین پادکست‌ها</h3>
+            </div>
+            <div class="col-xs-6 col-sm-6 text-left hidden">
+                <a href="https://sokanacademy.com/podcast/all" class="btn btn-default">همهٔ پادکست‌ها</a>
+            </div>
+        </div>
+        <div class="row">
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/9403/%D8%A2%D8%B1%D9%85%D8%A7%D9%86-%D9%88%D8%A7%D9%84%DB%8C-%D9%85%D8%AF%DB%8C%D8%B1-%D9%88-%D9%85%D9%88%D9%94%D8%B3%D8%B3-%DA%AF%D8%B1%D9%88%D9%87-%D9%86%D8%A8%D8%B6%DB%8C%E2%80%8C%D9%86%D9%88-%D9%88-%D8%B3%D8%A7%DB%8C%D8%AA-%DA%86%D8%B7%D9%88%D8%B1">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/arman-vali.jpg" class="img-responsive" alt="آرمان والی مدیر و مؤسس گروه نبضی‌نو و سایت چطور" title="آرمان والی مدیر و مؤسس گروه نبضی‌نو و سایت چطور" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> آرمان والی</h2>
+                                    <p>
+                                        مدیر و مؤسس گروه نبضی‌نو و سایت
+ چطور                                                                   
+                 <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/8619/%D8%A7%D9%85%DB%8C%D8%B1%D8%AD%D8%B3%DB%8C%D9%86-%D9%BE%DB%8C%E2%80%8C%D8%A8%D8%B1%D8%A7%D9%87-%D9%81%D9%88%D9%82%E2%80%8C%D8%AF%DA%A9%D8%AA%D8%B1%D8%A7%DB%8C-%D8%A8%DB%8C%DA%AF-%D8%AF%DB%8C%D8%AA%D8%A7-%D9%88-%D9%85%D8%AA%D8%AE%D8%B5%D8%B5-%D8%B3%DB%8C%D8%B3%D8%AA%D9%85%E2%80%8C%D9%87%D8%A7%DB%8C-%D8%AA%D9%88%D8%B2%DB%8C%D8%B9%E2%80%8C%D8%B4%D8%AF%D9%87">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/amir1.jpg" class="img-responsive" alt="امیرحسین پی‌براه فوق‌دکترای بیگ دیتا و متخصص سیستم‌های توزیع‌شده" title="امیرحسین پی‌براه فوق‌دکترای بیگ دیتا و متخصص سیستم‌های توزیع‌شده" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> امیرحسین پی‌براه</h2>
+                                    <p>
+                                        فوق‌دکترای بیگ دیتا و متخصص 
+سیستم‌های توزیع‌شده                                                     
+                               <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/8324/%D9%84%D9%82%D9%85%D8%A7%D9%86-%D8%A2%D9%88%D9%86%D8%AF-%D9%85%D8%AF%DB%8C%D8%B1-%D9%88-%D9%85%D9%88%D9%94%D8%B3%D8%B3-%D9%85%D8%AC%D9%85%D9%88%D8%B9%D9%87%D9%94-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C-%D8%B3%D9%90%D9%88%D9%86%E2%80%8C%D9%84%D9%90%D8%B1%D9%86">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/loghmanavand.jpg" class="img-responsive" alt="لقمان آوند مدیر و مؤسس مجموعهٔ آموزشی سِون‌لِرن" title="لقمان آوند مدیر و مؤسس مجموعهٔ آموزشی سِون‌لِرن" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> لقمان آوند</h2>
+                                    <p>
+                                        مدیر و مؤسس مجموعهٔ آموزشی 
+سِون‌لِرن                                                               
+                     <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/8082/%D8%A8%D9%87%D9%86%D8%A7%D9%85-%D8%A2%D9%82%D8%A7%D8%AC%D8%A7%D9%86%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3-%D9%85%D8%AF%D8%B1%D8%B3-%D9%88-%D9%85%D9%88%D9%94%D8%B3%D8%B3-%D9%88%D8%A8%E2%80%8C%D8%B3%D8%A7%DB%8C%D8%AA-%D8%A2%D9%86%DA%A9%D9%88%D8%A7%DB%8C%DA%A9%D8%B3">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/20150909_160524.jpg" class="img-responsive" alt="بهنام آقاجانی برنامه‌نویس، مدرس و مؤسس وب‌سایت uncox" title="بهنام آقاجانی برنامه‌نویس، مدرس و مؤسس وب‌سایت uncox" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> بهنام آقاجانی</h2>
+                                    <p>
+                                        برنامه‌نویس، مدرس و مؤسس 
+وب‌سایت uncox                                                           
+                         <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/7566/%D9%85%D8%B5%D8%B7%D9%81%DB%8C-%D8%A7%D8%AC%D9%84%E2%80%8C%D9%84%D9%88%DB%8C%DB%8C%D8%A7%D9%86-%D9%85%D8%AA%D8%AE%D8%B5%D8%B5-%DB%8C%D8%A7%D8%AF%DA%AF%DB%8C%D8%B1%DB%8C-%DA%98%D8%B1%D9%81-%D9%BE%D8%B1%D8%AF%D8%A7%D8%B2%D8%B4-%D9%85%D8%AA%D9%86-%D9%88-%D9%BE%D8%B1%D8%AF%D8%A7%D8%B2%D8%B4-%D8%B2%D8%A8%D8%A7%D9%86-%D8%B7%D8%A8%DB%8C%D8%B9%DB%8C">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/MosAj1.jpg" class="img-responsive" alt="مصطفی اجل‌لوییان متخصص یادگیری ژرف، پردازش متن و پردازش زبان طبیعی" title="مصطفی اجل‌لوییان متخصص یادگیری ژرف، پردازش متن و پردازش زبان طبیعی" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> مصطفی اجل‌لوییان</h2>
+                                    <p>
+                                        متخصص یادگیری ژرف، پردازش متن و 
+پردازش زبان طبیعی                                                       
+                             <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/7515/%D8%A7%D9%85%DB%8C%D8%B1-%D8%B1%D9%88%D8%B2%D8%A8%D9%87-%D9%85%D8%AE%D8%AA%D8%B1%D8%B9-%D9%88-%D9%85%D8%AD%D9%82%D9%82-%D8%B4%D8%A8%DA%A9%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C-%DA%A9%D8%A7%D9%85%D9%BE%DB%8C%D9%88%D8%AA%D8%B1%DB%8C-%D8%AF%D8%B1-%D8%B4%D8%B1%DA%A9%D8%AA-%D8%A7%D8%B1%DB%8C%DA%A9%D8%B3%D9%88%D9%86">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/amir-rozbeh.jpg" class="img-responsive" alt="امیر روزبه مخترع و محقق شبکه‌های کامپیوتری در شرکت اریکسون" title="امیر روزبه مخترع و محقق شبکه‌های کامپیوتری در شرکت اریکسون" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> امیر روزبه</h2>
+                                    <p>
+                                        مخترع و محقق شبکه‌های کامپیوتری 
+در شرکت اریکسون                                                         
+                           <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/7512/%D8%B3%D8%A7%D8%B1%D8%A7-%D8%B1%D8%A8%DB%8C%D8%B9%DB%8C-%D9%85%D8%B1%D8%A8%DB%8C-%D8%A7%D8%AC%D8%A7%DB%8C%D9%84-%D8%AF%D8%B1-%D8%B4%D8%B1%DA%A9%D8%AA-%D9%81%DB%8C%D9%86%E2%80%8C%D8%AA%DA%A9-%D8%B3%D9%88%D8%A6%D8%AF%DB%8C-%D8%A2%DB%8C%E2%80%8C%D8%B2%D8%AA%D9%84">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/sara-rabieri.jpg" class="img-responsive" alt="سارا ربیعی مربی اجایل در شرکت فین‌تِک سوئدی iZettle" title="سارا ربیعی مربی اجایل در شرکت فین‌تِک سوئدی iZettle" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> سارا ربیعی</h2>
+                                    <p>
+                                        مربی اجایل در شرکت فین‌تِک سوئدی
+ iZettle                                                                
+                    <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/7465/%D9%85%D9%87%D8%B1%D8%A7%D9%86-%D8%A7%D8%AE%D9%88%D8%A7%D9%86-%D8%AE%D8%A7%D9%84%D9%82%DB%8C-%D9%85%D8%AF%DB%8C%D8%B1%D9%81%D9%86%DB%8C-%DA%A9%D8%A7%D9%81%D9%87-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/mehran-akhavan-khalegho.jpg" class="img-responsive" alt="مهران اخوان خالقی مدیرفنی کافه‌بازار" title="مهران اخوان خالقی مدیرفنی کافه‌بازار" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> مهران اخوان خالقی</h2>
+                                    <p>
+                                        مدیرفنی کافه‌بازار              
+                                                                      <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/7450/%DA%A9%DB%8C%D8%A7%D8%B1%D8%B4-%D8%A2%D9%85%D8%A7%D9%84%DB%8C%E2%80%8C%D9%88%D9%86%D8%AF-%D8%B7%D8%B1%D8%A7%D8%AD-%D8%A7%D8%B1%D8%B4%D8%AF-%D8%AA%D8%AC%D8%B1%D8%A8%D9%87%D9%94-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%DB%8C-%D8%AF%D8%B1-%D8%AF%DB%8C%D8%AC%DB%8C%E2%80%8C%DA%A9%D8%A7%D9%84%D8%A7">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/kiarash.jpg" class="img-responsive" alt="کیارش آمالی‌وند طراح ارشد تجربه‌ٔ کاربری در دیجی‌کالا" title="کیارش آمالی‌وند طراح ارشد تجربه‌ٔ کاربری در دیجی‌کالا" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> کیارش آمالی‌وند</h2>
+                                    <p>
+                                        طراح ارشد تجربه‌ٔ کاربری در 
+دیجی‌کالا                                                               
+                     <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/7441/%D9%86%D8%BA%D9%85%D9%87-%D8%BA%D8%B2%D8%A7%D9%84%D9%87-%D8%AF%DA%A9%D8%AA%D8%B1%D8%A7%DB%8C-%D9%86%D9%88%D8%B1%D9%88%D8%B3%D8%A7%DB%8C%D9%86%D8%B3--%D9%85%D8%AA%D8%AE%D8%B5%D8%B5-%D9%85%D8%A7%D8%B4%DB%8C%D9%86-%D9%84%D8%B1%D9%86%DB%8C%D9%86%DA%AF-%D9%88-%D8%AF%DB%8C%D8%AA%D8%A7-%D8%B3%D8%A7%DB%8C%D9%86%D8%B3">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/NaghmehGhazaleh.jpg" class="img-responsive" alt="نغمه غزاله دکترای نوروساینس، متخصص ماشین لرنینگ و دیتا ساینس" title="نغمه غزاله دکترای نوروساینس، متخصص ماشین لرنینگ و دیتا ساینس" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> نغمه غزاله</h2>
+                                    <p>
+                                        دکترای نوروساینس، متخصص ماشین 
+لرنینگ و دیتا ساینس                                                     
+                               <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/6935/%D8%AD%D9%85%DB%8C%D8%AF-%D8%B5%D8%AF%D9%82%DB%8C%E2%80%8C%D9%86%DA%98%D8%A7%D8%AF-%D8%AF%D9%88%D9%84%D9%88%D9%BE%D8%B1-%D8%A7%D9%86%D8%AF%D8%B1%D9%88%DB%8C%D8%AF-%D9%88-%D9%85%D8%AA%D8%AE%D8%B5%D8%B5-%D8%A7%D9%85%D9%86%DB%8C%D8%AA">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/DSC_9130.jpg" class="img-responsive" alt="حمید صدقی‌نژاد دولوپر اندروید و متخصص امنیت" title="حمید صدقی‌نژاد دولوپر اندروید و متخصص امنیت" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> حمید صدقی‌نژاد</h2>
+                                    <p>
+                                        دولوپر اندروید و متخصص امنیت    
+                                                                        
+        <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/6868/%D9%87%D8%AE%D8%A7%D9%85%D9%86%D8%B4-%D9%85%D8%B4%D8%A7%DB%8C%D8%AE%DB%8C-%D8%B7%D8%B1%D8%A7%D8%AD-%D8%A7%D8%B1%D8%B4%D8%AF-%D8%AA%D8%AC%D8%B1%D8%A8%D9%87-%D8%AF%D8%B1-%D8%B4%D8%B1%DA%A9%D8%AA-%D8%A2%D8%B1-%D8%AC%DB%8C-%D8%A7%DB%8C">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/IMG-7633.jpg" class="img-responsive" alt="هخامنش مشایخی طراحی ارشد تجربه در شرکت R/GA" title="هخامنش مشایخی طراحی ارشد تجربه در شرکت R/GA" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> هخامنش مشایخی</h2>
+                                    <p>
+                                        طراحی ارشد تجربه در شرکت R/GA   
+                                                                        
+         <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/5886/%D9%85%D8%AD%D8%B3%D9%86-%D9%85%DB%8C%D8%B1%D8%AD%D8%B3%DB%8C%D9%86%DB%8C-%D8%AF%D9%88%D9%84%D9%88%D9%BE%D8%B1-%D8%A7%D8%B1%D8%B4%D8%AF-%D8%A7%D9%86%D8%AF%D8%B1%D9%88%DB%8C%D8%AF">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/IMG_20170903_121209.jpg" class="img-responsive" alt="محسن میرحسینی دولوپر ارشد اندروید در استارتاپ آلمانی German Autolabs" title="محسن میرحسینی دولوپر ارشد اندروید در استارتاپ آلمانی German Autolabs" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> محسن میرحسینی</h2>
+                                    <p>
+                                        دولوپر ارشد اندروید در استارتاپ 
+آلمانی German Autolabs                                                  
+                                  <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/5804/%D8%B3%D8%B9%DB%8C%D8%AF-%D9%81%D8%B1%D8%B6%DB%8C%D8%A7%D9%86-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3-%D8%A7%D8%B1%D8%B4%D8%AF-%D9%88-%D9%87%D9%85%E2%80%8C%D8%A8%D9%86%DB%8C%D8%A7%D9%86%E2%80%8C%DA%AF%D8%B0%D8%A7%D8%B1-%D8%B3%D8%A7%D9%85%D8%A7%D9%86%D9%87-%D8%AA%D9%84%D9%88%D8%A8%DB%8C%D9%88%D9%86">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/saeed-farzian.jpg" class="img-responsive" alt="سعید فرضیان برنامه‌نویس ارشد و هم‌بنیان‌گذار سامانه تلوبیون" title="سعید فرضیان برنامه‌نویس ارشد و هم‌بنیان‌گذار سامانه تلوبیون" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> سعید فرضیان</h2>
+                                    <p>
+                                        برنامه‌نویس ارشد و هم‌بنیان‌گذار
+ سامانه تلوبیون                                                         
+                           <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/5493/%D8%B4%D9%87%D8%B1%D8%A7%D9%85-%D9%85%D9%86%D8%B4%DB%8C%E2%80%8C%D9%BE%D9%88%D8%B1%DB%8C-%DA%A9%D8%A7%D8%B1%D8%B4%D9%86%D8%A7%D8%B3-%D9%88-%D9%85%D8%B4%D8%A7%D9%88%D8%B1-%D8%B4%D8%B1%DA%A9%D8%AA%E2%80%8C%D9%87%D8%A7-%D9%88-%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%E2%80%8C%D9%87%D8%A7%DB%8C-%D9%86%D8%B1%D9%85%E2%80%8C%D8%A7%D9%81%D8%B2%D8%A7%D8%B1%DB%8C">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/shahram-moshipouri.jpg" class="img-responsive" alt="شهرام منشی‌پوری کارشناس و مشاور شرکت‌ها و استارتاپ‌های نرم‌افزاری" title="شهرام منشی‌پوری کارشناس و مشاور شرکت‌ها و استارتاپ‌های نرم‌افزاری" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> شهرام منشی‌پوری</h2>
+                                    <p>
+                                        کارشناس و مشاور شرکت‌ها و 
+استارتاپ‌های نرم‌افزاری                                                 
+                                   <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/5219/%D8%B1%D9%87%D8%A8%D8%B1-%D9%81%D9%86%DB%8C-%D9%BE%D8%B1%D9%88%DA%98%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C-%D8%B4%D8%A8%DA%A9%D9%87-%D8%AF%D8%B1-%D8%B4%D8%B1%DA%A9%D8%AA-%D8%B3%DB%8C%D8%B3%DA%A9%D9%88">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/ali-moghadam-radio-fullstack.jpg" class="img-responsive" alt="علی مقدم رهبر فنی پروژه‌های شبکه در شرکت Cisco" title="علی مقدم رهبر فنی پروژه‌های شبکه در شرکت Cisco" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> علی مقدم</h2>
+                                    <p>
+                                        رهبر فنی پروژه‌های شبکه در شرکت 
+Cisco                                                                   
+                 <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/5185/%D8%B3%D8%A7%D9%85-%DA%A9%D8%A7%D8%B8%DB%8C%D9%85%D8%A7%D9%86-%D9%85%D9%87%D9%86%D8%AF%D8%B3-%D9%86%D8%B1%D9%85%E2%80%8C%D8%A7%D9%81%D8%B2%D8%A7%D8%B1-%D9%88-%D9%87%D9%85%E2%80%8C%D8%A8%D9%86%DB%8C%D8%A7%D9%86%DA%AF%D8%B0%D8%A7%D8%B1-%D8%A7%D9%88%D8%B1%DB%8C%D9%BE%D8%AF%DB%8C%D8%A7">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/sam.jpg" class="img-responsive" alt="سام کاظمیان مهندس نرم‌افزار و هم‌بنیانگذار Everipedia" title="سام کاظمیان مهندس نرم‌افزار و هم‌بنیانگذار Everipedia" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> سام کاظمیان</h2>
+                                    <p>
+                                        مهندس نرم‌افزار و هم‌بنیانگذار 
+Everipedia                                                              
+                      <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/5081/%D8%B9%D9%84%DB%8C-%D9%81%D8%B1%D9%88%D8%BA%DB%8C-%D9%85%D8%AF%DB%8C%D8%B1-%D9%87%D9%86%D8%B1%DB%8C-%D8%B7%D8%B1%D8%A7%D8%AD-%D8%B1%D8%A7%D8%A8%D8%B7-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%DB%8C-%D9%88-%D8%AA%D8%AC%D8%B1%D8%A8%D9%87-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%DB%8C">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/ali-foroghi.jpg" class="img-responsive" alt="علی فروغی مدیر هنری، طراح UI و کارشناس UX" title="علی فروغی مدیر هنری، طراح UI و کارشناس UX" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> علی فروغی</h2>
+                                    <p>
+                                        مدیر هنری، طراح UI و کارشناس UX 
+                                                                        
+           <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/5059/%D8%B2%D9%87%D8%B1%D8%A7-%D9%86%D8%B8%D8%B1%DB%8C-%D9%85%D8%AD%D9%82%D9%82-%D9%87%D9%88%D8%B4-%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C-%D8%AF%D8%B1-%D8%B4%D8%B1%DA%A9%D8%AA-%D8%A7%D8%B3%D9%BE%D8%A7%D8%AA%DB%8C%D9%81%D8%A7%DB%8C">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/zahra-nazari.jpg" class="img-responsive" alt="زهرا نظری محقق هوش مصنوعی در شرکت Spotify" title="زهرا نظری محقق هوش مصنوعی در شرکت Spotify" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> زهرا نظری</h2>
+                                    <p>
+                                        محقق هوش مصنوعی در شرکت Spotify 
+                                                                        
+           <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/4701/%D9%BE%D9%88%DB%8C%D8%A7-%D9%BE%DB%8C%D8%B1%D8%AD%D8%B3%DB%8C%D9%86%D9%84%D9%88-%D9%87%D9%85%E2%80%8C%D8%A8%D9%86%DB%8C%D8%A7%D9%86%E2%80%8C%DA%AF%D8%B0%D8%A7%D8%B1-%D9%88-%D9%85%D8%AF%DB%8C%D8%B1%D8%B9%D8%A7%D9%85%D9%84-%D8%A7%D8%A8%D8%B1%D8%A2%D8%B1%D9%88%D8%A7%D9%86">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/poya-pirhossinlo.jpg" class="img-responsive" alt="پویا پیرحسینلو هم‌بنیان‌گذار و مدیرعامل ابرآروان" title="پویا پیرحسینلو هم‌بنیان‌گذار و مدیرعامل ابرآروان" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> پویا پیرحسینلو</h2>
+                                    <p>
+                                        هم‌بنیان‌گذار و مدیرعامل 
+ابرآروان                                                                
+                    <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/4804/%D8%B9%D9%84%DB%8C-%D8%A7%D9%85%DB%8C%D8%B1%DB%8C-%D9%85%D8%AA%D8%AE%D8%B5%D8%B5-%D9%87%D9%88%D8%B4-%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C-%D9%88-%DB%8C%D8%A7%D8%AF%DA%AF%DB%8C%D8%B1%DB%8C-%D9%85%D8%A7%D8%B4%DB%8C%D9%86%DB%8C-%D8%AF%D8%B1-%DA%AF%D9%88%DA%AF%D9%84">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/amiri.jpg" class="img-responsive" alt="علی امیری متخصص هوش مصنوعی و یادگیری ماشینی در گوگل" title="علی امیری متخصص هوش مصنوعی و یادگیری ماشینی در گوگل" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> علی امیری</h2>
+                                    <p>
+                                        متخصص هوش مصنوعی و یادگیری 
+ماشینی در گوگل                                                          
+                          <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/4772/%D9%85%DB%8C%D9%84%D8%A7%D8%AF-%D9%86%D8%A7%D8%B5%D8%B1%DB%8C-%D9%85%D9%87%D9%86%D8%AF%D8%B3-%D9%88-%D9%85%D8%B9%D9%85%D8%A7%D8%B1-%D9%86%D8%B1%D9%85%E2%80%8C%D8%A7%D9%81%D8%B2%D8%A7%D8%B1-%D8%AF%D8%B1-%D8%B4%D8%B1%DA%A9%D8%AA-%DA%AF%D9%88%DA%AF%D9%84">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/image.jpg" class="img-responsive" alt="میلاد ناصری مهندس و معمار نرم‌افزار در شرکت گوگل" title="میلاد ناصری مهندس و معمار نرم‌افزار در شرکت گوگل" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> میلاد ناصری</h2>
+                                    <p>
+                                        مهندس و معمار نرم‌افزار در شرکت 
+گوگل                                                                    
+                <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/4677/%D9%85%D9%87%D8%B1%D8%A7%D9%86-%D8%B7%D8%B1%DB%8C%D8%AD%DB%8C-%D9%85%D8%AA%D8%AE%D8%B5%D8%B5-%D8%A7%D9%85%D9%86%DB%8C%D8%AA-%D8%A7%D8%B7%D9%84%D8%A7%D8%B9%D8%A7%D8%AA">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/Mehran_Toreihi_profile_photo.jpg" class="img-responsive" alt="مهران طُرِیحی متخصص امنیت اطلاعات و ارتباطات" title="مهران طُرِیحی متخصص امنیت اطلاعات و ارتباطات" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> مهران طُرِیحی</h2>
+                                    <p>
+                                        متخصص امنیت اطلاعات و ارتباطات  
+                                                                        
+          <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/4497/%D8%A8%D8%A7%D8%A8%DA%A9-%D8%AC%D9%84%DB%8C%D9%84%D9%88%D9%86%D8%AF-%DA%A9%D8%A7%D8%B1%D8%B4%D9%86%D8%A7%D8%B3-%D9%88-%D9%85%D8%B4%D8%A7%D9%88%D8%B1-%D9%81%D9%86%D8%A7%D9%88%D8%B1%DB%8C-%D8%A8%D9%84%D8%A7%DA%A9%DA%86%DB%8C%D9%86-%D9%88-%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA%D9%88%DA%A9%D8%A7%D8%B1%D9%86%D8%B3%DB%8C">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/babak-jalilvand.jpg" class="img-responsive" alt="بابک جلیلوند کارشناس و مشاور فناوری بلاکچین و کریپتوکارنسی" title="بابک جلیلوند کارشناس و مشاور فناوری بلاکچین و کریپتوکارنسی" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> بابک جلیلوند</h2>
+                                    <p>
+                                        کارشناس و مشاور فناوری بلاکچین و
+ کریپتوکارنسی                                                           
+                         <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/4471/%D9%85%D8%AD%D9%85%D9%88%D8%AF-%DA%A9%D8%B1%DB%8C%D9%85%DB%8C%D8%A7%D9%86-%D9%85%D8%AA%D8%AE%D8%B5%D8%B5-%D8%AF%D8%B1-%D8%AD%D9%88%D8%B2%D9%87-%D9%87%D9%88%D8%B4-%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/20170904_000025.jpg" class="img-responsive" alt="محمود کریمیان متخصص در حوزهٔ هوش مصنوعی" title="محمود کریمیان متخصص در حوزهٔ هوش مصنوعی" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> محمود کریمیان</h2>
+                                    <p>
+                                        متخصص در حوزهٔ هوش مصنوعی       
+                                                                        
+     <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/4317/%D8%A7%D9%85%DB%8C%D8%B1-%D8%B5%D8%A7%D8%AF%D9%82%E2%80%8C%D9%BE%D9%88%D8%B1-%D9%85%D8%AF%DB%8C%D8%B1-%D9%88-%D9%85%D8%B4%D8%A7%D9%88%D8%B1-%D8%AF%D8%B1-%D8%AD%D9%88%D8%B2%D9%87-%D9%85%D8%AD%D8%AA%D9%88%D8%A7-%D9%88-%D8%B4%D8%A8%DA%A9%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C-%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%DB%8C">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/amirsp-15.jpg" class="img-responsive" alt="امیر صادق‌پور مدیر و مشاور در حوزهٔ محتوا و شبکه‌های اجتماعی" title="امیر صادق‌پور مدیر و مشاور در حوزهٔ محتوا و شبکه‌های اجتماعی" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> امیر صادق‌پور</h2>
+                                    <p>
+                                        مدیر و مشاور در حوزهٔ محتوا و 
+شبکه‌های اجتماعی                                                        
+                            <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/1920/%D9%85%D8%B5%D8%A7%D8%AD%D8%A8%D9%87-%D8%A8%D8%A7-%D9%85%D8%AD%D9%85%D8%AF%D8%B1%D8%B6%D8%A7-%D9%85%D8%AD%D8%B3%D9%86%DB%8C-%D8%A8%D9%86%DB%8C%D8%A7%D9%86%DA%AF%D8%B0%D8%A7%D8%B1-%D9%BE%DB%8C%DA%A9%E2%80%8C-%D8%A8%D8%B1%D8%AA%D8%B1">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/d5a756988a199ad17db7a1afa2db2051.jpg" class="img-responsive" alt="محمدرضا محسنی بنیان‌گذار پیک‌ برتر و مجموعه‌ای از سایت‌های موفق ایرانی" title="محمدرضا محسنی بنیان‌گذار پیک‌ برتر و مجموعه‌ای از سایت‌های موفق ایرانی" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> محمدرضا محسنی</h2>
+                                    <p>
+                                        بنیان‌گذار پیک‌ برتر و مجموعه‌ای
+ از سایت‌های موفق ایرانی                                                
+                                    <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/1855/%D8%B3%DB%8C%D8%AF-%D9%85%D8%AD%D8%B3%D9%86-%D8%AD%D8%B3%D9%86%DB%8C-%D9%85%D9%82%D8%AF%D9%85-%D8%B3%DB%8C%D8%B3%D8%AA%D9%85-%D8%A7%D8%AF%D9%85%DB%8C%D9%86%DB%8C%D8%B3%D8%AA%D8%B1%DB%8C%D8%AA%D9%88%D8%B1-%D8%B4%D8%B1%DA%A9%D8%AA-%D8%A7%DB%8C%D8%A8%DB%8C">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/2efac1589d8e177c6f7c755941c60e97.jpg" class="img-responsive" alt="سید محسن حسنی مقدم سیستم ادمینیستریتور شرکت eBay" title="سید محسن حسنی مقدم سیستم ادمینیستریتور شرکت eBay" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> سید محسن حسنی مقدم</h2>
+                                    <p>
+                                        سیستم ادمینیستریتور شرکت eBay   
+                                                                        
+         <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/1715/%D8%A7%D8%B3%D9%85%D8%A7%D8%B9%DB%8C%D9%84-%D8%A2%D8%AA%D8%B4%E2%80%8C%D9%BE%D8%B2-%DA%AF%D8%B1%DA%AF%D8%B1%DB%8C-%D9%85%D8%AA%D8%AE%D8%B5%D8%B5-%D9%87%D9%88%D8%B4-%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C-%D8%AF%D8%A7%D8%AF%D9%87-%DA%A9%D8%A7%D9%88%DB%8C-%D9%88-%D8%AF%D8%A7%D9%86%D8%B4-%D8%AF%D8%A7%D8%AF%D9%87">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/05a5b5a8a22dd396c5cbc8c6c053ae93.jpg" class="img-responsive" alt="اسماعیل آتش‌پز گرگری متخصص هوش‌مصنوعی، داده کاوی و دانش داده" title="اسماعیل آتش‌پز گرگری متخصص هوش‌مصنوعی، داده کاوی و دانش داده" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> اسماعیل آتش‌پز گرگری</h2>
+                                    <p>
+                                        متخصص هوش‌مصنوعی، داده کاوی و 
+دانش داده                                                               
+                     <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/1161/%D9%86%D8%A7%D8%B5%D8%B1-%D8%BA%D8%A7%D9%86%D9%85%E2%80%8C%D8%B2%D8%A7%D8%AF%D9%87-%D9%85%D8%AF%DB%8C%D8%B1-%D8%A7%D9%BE%D8%A7%D8%AA%D8%A7%D9%86-%D8%B3%D8%B1%D9%85%D8%A7%DB%8C%D9%87%E2%80%8C%DA%AF%D8%B0%D8%A7%D8%B1-%D9%88-%D8%A8%D9%86%DB%8C%D8%A7%D9%86%DA%AF%D8%B0%D8%A7%D8%B1-%DA%AF%D8%B1%D9%88%D9%87-%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%E2%80%8C%D9%87%D8%A7%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/07b0fe9a058c217998f914a06c866616.jpg" class="img-responsive" alt="ناصر غانم‌زاده مدیر اُپاتان، سرمایه‌گذار و بنیان‌گذار گروه استارتاپ‌های ایران" title="ناصر غانم‌زاده مدیر اُپاتان، سرمایه‌گذار و بنیان‌گذار گروه استارتاپ‌های ایران" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> ناصر غانم‌زاده</h2>
+                                    <p>
+                                        مدیر اُپاتان، سرمایه‌گذار و 
+بنیان‌گذار گروه استارتاپ‌های ایران                                      
+                                              <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/1136/%D9%85%DB%8C%D9%84%D8%A7%D8%AF-%D9%86%DA%A9%D9%88%D9%81%D8%B1-%D8%B1%D8%A7%D9%87%D8%A8%D8%B1-%D9%85%D8%B4%D8%A7%D9%88%D8%B1-%D9%88-%D8%AA%D9%88%D8%B3%D8%B9%D9%87%E2%80%8C%D8%AF%D9%87%D9%86%D8%AF%D9%87-%D8%AF%D8%B1-%D9%BE%D8%B1%D9%88%DA%98%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C-%D9%86%D8%B1%D9%85%E2%80%8C%D8%A7%D9%81%D8%B2%D8%A7%D8%B1%DB%8C">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/254971b48bda7e27057790aa94887ae6.jpg" class="img-responsive" alt="میلاد نکوفر راهبر، مشاور و توسعه‌دهنده در پروژه‌های نرم‌افزاری" title="میلاد نکوفر راهبر، مشاور و توسعه‌دهنده در پروژه‌های نرم‌افزاری" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> میلاد نکوفر</h2>
+                                    <p>
+                                        راهبر، مشاور و توسعه‌دهنده در 
+پروژه‌های نرم‌افزاری                                                    
+                                <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/1111/%D8%B4%D8%B1%D9%88%DB%8C%D9%86-%D8%B3%D9%88%D8%B1%DB%8C-%D9%85%D9%88%D8%B3%D8%B3-%D8%B4%D8%B1%DA%A9%D8%AA-%D9%BE%D8%B1%D8%AF%D8%A7%D8%B2%D8%B4-%D9%87%D9%88%D8%B4%D9%85%D9%86%D8%AF-%D8%A7%D9%84%D8%A8%D8%B1%D8%B2">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/1e897a4228a771ecb2135abc3c18e983.jpg" class="img-responsive" alt="شروین سوری بنیان‌گذار شرکت پردازش هوشمند البرز" title="شروین سوری بنیان‌گذار شرکت پردازش هوشمند البرز" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> شروین سوری</h2>
+                                    <p>
+                                        بنیان‌گذار شرکت پردازش هوشمند 
+البرز                                                                   
+                 <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/1106/%D9%BE%D8%AF%D8%B1%D8%A7%D9%85-%D9%BE%D9%88%D8%B1%D8%AD%D8%B3%DB%8C%D9%86-%D9%85%D8%AF%DB%8C%D8%B1%D9%81%D9%86%DB%8C-%D8%B4%D8%B1%DA%A9%D8%AA-%D9%86%D8%B1%D9%85%E2%80%8C%D8%A7%D9%81%D8%B2%D8%A7%D8%B1%DB%8C-%D8%A2%D8%AA%DB%8C%E2%80%8C%D8%AA%D9%84">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/6e3c8649fb7349cc52bada6c0ec9c0cb.jpg" class="img-responsive" alt="پدرام پورحسین مدیرفنی شرکت نرم‌افزاری آتی‌تل" title="پدرام پورحسین مدیرفنی شرکت نرم‌افزاری آتی‌تل" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> پدرام پورحسین</h2>
+                                    <p>
+                                        مدیرفنی شرکت نرم‌افزاری آتی‌تل  
+                                                                        
+          <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/1098/%D9%85%D8%B5%D8%A7%D8%AD%D8%A8%D9%87-%D8%A8%D8%A7-%D8%B4%D8%A7%D9%87%DB%8C%D9%86-%D8%A7%DA%A9%D8%A8%D8%B1%DB%8C%D8%A7%D9%86-%D8%B7%D8%A8%D8%B1%DB%8C-%D8%A8%D9%86%DB%8C%D8%A7%D9%86%DA%AF%D8%B0%D8%A7%D8%B1-%D8%B4%D8%B1%DA%A9%D8%AA-%D9%86%D8%B1%D9%85%E2%80%8C%D8%A7%D9%81%D8%B2%D8%A7%D8%B1%DB%8C-%DA%86%D8%A7%D8%B1%DA%AF%D9%88%D9%86">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/6fe662dc0b31d68141fe059ed287ead2.jpg" class="img-responsive" alt="شاهین اکبریان طبری بنیان‌گذار شرکت نرم‌افزاری چارگون" title="شاهین اکبریان طبری بنیان‌گذار شرکت نرم‌افزاری چارگون" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> شاهین اکبریان طبری</h2>
+                                    <p>
+                                        بنیان‌گذار شرکت نرم‌افزاری 
+چارگون                                                                  
+                  <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/1092/%D9%85%D8%B5%D8%A7%D8%AD%D8%A8%D9%87-%D8%A8%D8%A7-%D8%B4%DA%A9%DB%8C%D8%A8-%D8%B4%D8%A7%DB%8C%DA%AF%D8%A7%D9%86-%D9%85%D8%AF%D8%B1%D8%B3-%D9%85%D8%AD%D9%82%D9%82-%D9%88-%DA%A9%D8%A7%D8%B1%D8%B4%D9%86%D8%A7%D8%B3-%D9%85%D8%A8%D8%A7%D8%AD%D8%AB-%D8%B4%D8%A8%DA%A9%D9%87">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/304472ae0546a20ed588f6a6a3e53c91.jpg" class="img-responsive" alt="شکیب شایگان مدرس، محقق و کارشناس مباحث شبکه" title="شکیب شایگان مدرس، محقق و کارشناس مباحث شبکه" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> شکیب شایگان</h2>
+                                    <p>
+                                        مدرس، محقق و کارشناس مباحث شبکه 
+                                                                        
+           <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/57/%D9%85%D8%B5%D8%A7%D8%AD%D8%A8%D9%87-%D8%A8%D8%A7-%D8%B1%D8%B6%D8%A7-%D9%86%D9%88%D8%B0%D8%B1%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%D8%8C-%D9%85%D8%AF%DB%8C%D8%B1-%D8%B4%D8%A8%DA%A9%D9%87-%D9%88-%D8%B9%D8%B6%D9%88-%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE-%D8%AA%D9%84%D9%87%E2%80%8C%D9%81%D8%B1%DB%8C%D9%85">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/ee1367f71fcb9a901194de20a40994fd.jpg" class="img-responsive" alt="رضا نوذری برنامه‌نویس، مدیر شبکه و عضو استارتاپ تله‌فریم" title="رضا نوذری برنامه‌نویس، مدیر شبکه و عضو استارتاپ تله‌فریم" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> رضا نوذری</h2>
+                                    <p>
+                                        برنامه‌نویس، مدیر شبکه و عضو 
+استارتاپ تله‌فریم                                                       
+                             <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/56/%D9%85%D8%AD%D9%85%D8%AF-%D9%85%D9%82%D8%AF%D8%B3:-%D9%85%D8%B4%D8%A7%D9%88%D8%B1-%D9%88-%D9%85%D8%B9%D9%85%D8%A7%D8%B1-%D8%B1%D8%A7%D9%87%DA%A9%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D8%B4%D8%A8%DA%A9%D9%87-%D8%AF%D8%B1-%D8%B4%D8%B1%DA%A9%D8%AA-%D8%A7%DB%8C-%D8%AA%DB%8C-%D8%A7%D9%86%D8%AF-%D8%AA%DB%8C">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/f4b30024fae1615eb55fbc675605b632.jpg" class="img-responsive" alt="محمد مقدس مشاور و معمار راهکارهای شبکه در شرکت AT&amp;T" title="محمد مقدس مشاور و معمار راهکارهای شبکه در شرکت AT&amp;T" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> محمد مقدس</h2>
+                                    <p>
+                                        مشاور و معمار راهکارهای شبکه در 
+شرکت AT&amp;T                                                           
+                         <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/55/%D9%85%D8%AD%D9%85%D8%AF-%D9%86%D8%B5%DB%8C%D8%B1%DB%8C-%DB%8C%DA%A9%DB%8C-%D8%A7%D8%B2-%D8%AF%D9%88-%D8%A8%D9%86%DB%8C%D8%A7%D9%86%DA%AF%D8%B0%D8%A7%D8%B1-%D9%85%D8%AC%D9%85%D9%88%D8%B9%D9%87-%DB%8C-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C-%D8%A2%DB%8C-%D8%AA%DB%8C-%D9%BE%D8%B1%D9%88">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/0235fe60567db25faac27002eb4a7dc1.jpg" class="img-responsive" alt="محمد نصیری یکی از دو بنیان‌گذار مجموعهٔ آموزشی آی‌تی پرو" title="محمد نصیری یکی از دو بنیان‌گذار مجموعهٔ آموزشی آی‌تی پرو" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> محمد نصیری</h2>
+                                    <p>
+                                        یکی از دو بنیان‌گذار مجموعهٔ 
+آموزشی آی‌تی پرو                                                        
+                            <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/54/%D8%A7%D8%B1%D8%AF%D9%84%D8%A7%D9%86-%D9%86%D9%82%D8%B4%D9%8A%D9%86%D9%87:-%D8%AA%D9%88%D8%B3%D8%B9%D9%87-%D8%AF%D9%87%D9%86%D8%AF%D9%87-%D8%A7%D8%B1%D8%B4%D8%AF-%D8%B4%D8%B1%DA%A9%D8%AA-%DA%A9%D8%B1%DB%8C%D8%AA%DB%8C%DA%A9%D8%A7%D9%84-%D9%85%D8%B3-%D9%83%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%D9%8A%D9%86-%D9%88-%D8%AF%D8%A7%D9%86%D8%B4%D8%AC%D9%88%DB%8C-%D8%AD%D9%82%D9%88%D9%82-%D9%85%D9%87%D8%A7%D8%AC%D8%B1%D8%AA">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/751e3439b192d9e5e272ba190cc4e376.jpg" class="img-responsive" alt="اردلان نقشينه برنامه‌نویس ارشد شرکت Critical Mass، كارآفرين و دانشجوی حقوق مهاجرت" title="اردلان نقشينه برنامه‌نویس ارشد شرکت Critical Mass، كارآفرين و دانشجوی حقوق مهاجرت" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> اردلان نقشينه</h2>
+                                    <p>
+                                        برنامه‌نویس ارشد شرکت Critical 
+Mass، كارآفرين و دانشجوی حقوق مهاجرت                                    
+                                                <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/52/%D8%B3%DB%8C%D8%AF-%D9%85%D8%B5%D8%B7%D9%81%DB%8C-%DA%A9%D9%84%D8%A7%D9%85%DB%8C-%D9%87%D8%B1%DB%8C%D8%B3:-%DB%8C%DA%A9%DB%8C-%D8%A7%D8%B2-%D8%AF%D9%88-%D8%A8%D9%86%DB%8C%D8%A7%D9%86%DA%AF%D8%B0%D8%A7%D8%B1-%D8%B3%D8%A7%D8%B2%D9%85%D8%A7%D9%86-%D8%B9%D9%84%D9%85%DB%8C-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C-%D9%81%D8%B1%D8%A7%D8%AF%D8%B1%D8%B3">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/fc3d790a436f8268c8868d50b25f2f1c.jpg" class="img-responsive" alt="سید مصطفی کلامی هریس یکی از دو بنیان‌گذار سازمان علمی-آموزشی فرادرس" title="سید مصطفی کلامی هریس یکی از دو بنیان‌گذار سازمان علمی-آموزشی فرادرس" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> سید مصطفی کلامی هریس</h2>
+                                    <p>
+                                        یکی از دو بنیان‌گذار سازمان 
+علمی-آموزشی فرادرس                                                      
+                              <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/51/%D8%A7%D9%85%DB%8C%D8%B1-%D8%AD%D8%A8%DB%8C%D8%A8%E2%80%8C%D8%B2%D8%A7%D8%AF%D9%87:-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3-%D9%BE%DB%8C-%D8%A7%DA%86-%D9%BE%DB%8C%D8%8C-%D9%85%D8%AF%DB%8C%D8%B1-%D9%81%D9%86%DB%8C-%D9%88-%DB%8C%DA%A9%DB%8C-%D8%A7%D8%B2-%D8%A8%D9%86%DB%8C%D8%A7%D9%86-%DA%AF%D8%B0%D8%A7%D8%B1%D8%A7%D9%86-%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA-%D8%A2%D9%BE-%D8%A7%DB%8C%D9%88%D9%86%D8%AF">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/3be17ade629a4461b634c7014657cb21.jpg" class="img-responsive" alt="امیر حبیب‌زاده برنامه‌نویس PHP، مدیر فنی و یکی از بنیان‌گذاران استارتاپ ایوند" title="امیر حبیب‌زاده برنامه‌نویس PHP، مدیر فنی و یکی از بنیان‌گذاران استارتاپ ایوند" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> امیر حبیب‌زاده</h2>
+                                    <p>
+                                        برنامه‌نویس PHP، مدیر فنی و یکی 
+از بنیان‌گذاران استارتاپ ایوند                                          
+                                          <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/50/%D8%B3%D9%BE%D9%87%D8%B1-%DA%AF%D9%86%D8%AC%DB%8C:-%D9%85%D8%AF%D8%B1%D8%B3-%D8%AA%D9%88%D8%B3%D8%B9%D9%87-%DB%8C-%D8%A7%D9%BE%D9%84%DB%8C%DA%A9%DB%8C%D8%B4%D9%86-%D9%87%D8%A7%DB%8C-%D8%A7%D9%86%D8%AF%D8%B1%D9%88%DB%8C%D8%AF%DB%8C-%D8%A8%D8%A7-%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D8%A7%D8%B2-%D9%BE%D9%84%D8%AA%D9%81%D8%B1%D9%85-%D8%A8%DB%8C%D8%B3%DB%8C%DA%A9-%D9%81%D9%88%D8%B1-%D8%A7%D9%86%D8%AF%D8%B1%D9%88%DB%8C%D8%AF">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/af3c87e18e806399ae61a7fa66099e95.jpg" class="img-responsive" alt="سپهر گنجی مدرس توسعهٔ اپلیکیشن‌های اندرویدی بااستفاده از پلتفرم بیسیک فور اندروید" title="سپهر گنجی مدرس توسعهٔ اپلیکیشن‌های اندرویدی بااستفاده از پلتفرم بیسیک فور اندروید" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> سپهر گنجی</h2>
+                                    <p>
+                                        مدرس توسعهٔ اپلیکیشن‌های 
+اندرویدی بااستفاده از پلتفرم بیسیک فور اندروید                          
+                                                          <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/49/%D8%B5%D8%A7%D8%AF%D9%82-%D8%B9%D9%84%DB%8C%E2%80%8C%D8%A7%DA%A9%D8%A8%D8%B1%DB%8C:-%D9%85%D8%B9%D8%B1%D9%81%DB%8C-%D8%A7%D9%86%D8%AC%D9%85%D9%86-%D8%AC%D8%A7%D9%88%D8%A7-%DA%A9%D8%A7%D9%BE">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/69f689a570994ee817d50ebd76136bb0.jpg" class="img-responsive" alt="صادق علی‌اکبری معرفی انجمن جاوا کاپ از زبان مؤسس این انجمن" title="صادق علی‌اکبری معرفی انجمن جاوا کاپ از زبان مؤسس این انجمن" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> صادق علی‌اکبری</h2>
+                                    <p>
+                                        معرفی انجمن جاوا کاپ از زبان 
+مؤسس این انجمن                                                         
+                           <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/48/%D8%B9%D9%84%DB%8C-%D8%AD%D8%A7%D8%AC%DB%8C-%D9%85%D8%AD%D9%85%D8%AF%DB%8C-%D9%85%D8%AF%DB%8C%D8%B1-%D9%88-%D9%85%D9%88%D8%B3%D8%B3-%D9%87%D9%85%DB%8C%D8%A7%D8%B1-%D9%88%D8%B1%D8%AF%D9%BE%D8%B1%D8%B3-%D9%88-%D9%85%D8%A7%D8%B1%DA%A9%D8%AA-%D9%88%D8%B1%D8%AF%D9%BE%D8%B1%D8%B3">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/52d0107afb754ae8a521f10328fc4fab.jpg" class="img-responsive" alt="علی حاجی محمدی مدیر و مؤسس همیار وردپرس و مارکت وردپرس" title="علی حاجی محمدی مدیر و مؤسس همیار وردپرس و مارکت وردپرس" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> علی حاجی محمدی</h2>
+                                    <p>
+                                        مدیر و مؤسس همیار وردپرس و 
+مارکت وردپرس                                                            
+                        <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/47/%D8%B5%D8%A7%D8%AF%D9%82-%D8%B9%D9%84%DB%8C%E2%80%8C%D8%A7%DA%A9%D8%A8%D8%B1%DB%8C:-%D9%85%D8%AF%D8%B1%D8%B3-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%D9%88-%D8%A7%D8%B2-%D9%85%D9%88%D8%B3%D8%B3%DB%8C%D9%86-%D8%A7%D9%86%D8%AC%D9%85%D9%86-%D8%AC%D8%A7%D9%88%D8%A7-%DA%A9%D8%A7%D9%BE">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/69f689a570994ee817d50ebd76136bb0.jpg" class="img-responsive" alt="صادق علی‌اکبری مدرس برنامه‌نویسی و از مؤسسین انجمن جاوا کاپ" title="صادق علی‌اکبری مدرس برنامه‌نویسی و از مؤسسین انجمن جاوا کاپ" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> صادق علی‌اکبری</h2>
+                                    <p>
+                                        مدرس برنامه‌نویسی و از مؤسسین 
+انجمن جاوا کاپ                                                          
+                          <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/46/%D9%85%D8%AD%D9%85%D8%AF-%D8%B1%D8%B3%D8%AA%D9%85%DB%8C-%D8%AA%D9%88%D8%B3%D8%B9%D9%87-%D8%AF%D9%87%D9%86%D8%AF%D9%87-%DB%8C-%D8%A7%D8%B1%D8%B4%D8%AF-%D9%88%D8%A8-%D8%AF%D8%B1-%D8%B3%D8%A7%DB%8C%D8%AA-%D8%B4%DB%8C%D9%BE%D9%88%D8%B1">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/75fe50e15021bb41c4a9ec15cf19773a.jpg" class="img-responsive" alt="محمد رستمی برنامه‌نویس ارشد وب در شیپور" title="محمد رستمی برنامه‌نویس ارشد وب در شیپور" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> محمد رستمی</h2>
+                                    <p>
+                                        برنامه‌نویس ارشد وب در شیپور    
+                                                                        
+        <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/45/%D9%85%D8%B5%D8%B7%D9%81%DB%8C-%D9%BE%D9%88%D8%B1%D8%BA%D8%B1%DB%8C%D8%A8:-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3-%D8%A7%D8%B3%D8%A8%D9%82-%D8%B3%D8%A7%DB%8C%D8%AA-%D9%86%D8%A7%D8%B1%D9%86%D8%AC%DB%8C">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/c092be38ce85dbbbf074335400d6c742.jpg" class="img-responsive" alt="مصطفی پورغریب برنامه‌نویس اسبق سایت نارنجی" title="مصطفی پورغریب برنامه‌نویس اسبق سایت نارنجی" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> مصطفی پورغریب</h2>
+                                    <p>
+                                        برنامه‌نویس اسبق سایت نارنجی    
+                                                                        
+        <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/44/%D8%A8%D9%87%D9%86%D8%A7%D9%85-%D8%A7%D8%AD%D9%85%D8%AF-%D8%AE%D8%A7%D9%86-%D8%A8%DB%8C%DA%AF%DB%8C-%D8%A7%D8%B2-%D8%B9%D9%84%D8%A7%D9%82%D9%85%D9%86%D8%AF%D8%A7%D9%86-%D8%A8%D9%87-%D8%AF%D9%86%DB%8C%D8%A7%DB%8C-%D9%81%D9%86%D8%A7%D9%88%D8%B1%DB%8C%D8%8C-%D8%A7%D9%BE%D9%86-%D8%B3%D9%88%D8%B1%D8%B3-%D9%88-%DA%AF%D9%86%D9%88-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/49ec486d9aab45770f2d600f3e62f3a6.jpg" class="img-responsive" alt="بهنام احمد خان‌بیگی از علاقمندان به دنیای فناوری، اپن‌سورس و گنو/لینوکس" title="بهنام احمد خان‌بیگی از علاقمندان به دنیای فناوری، اپن‌سورس و گنو/لینوکس" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> بهنام احمد خان‌بیگی</h2>
+                                    <p>
+                                        از علاقمندان به دنیای فناوری، 
+اپن‌سورس و گنو/لینوکس                                                   
+                                 <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/43/%D9%85%D8%B5%D8%A7%D8%AD%D8%A8%D9%87-%D8%A8%D8%A7-%D8%AC%D8%A7%D8%AF%DB%8C-%DA%AF%DB%8C%DA%A9-%D9%82%D8%AF%DB%8C%D9%85%DB%8C-%D9%88-%D9%81%D8%B9%D8%A7%D9%84-%D8%AC%D8%A7%D9%85%D8%B9%D9%87-%DB%8C-%D8%A7%D9%BE%D9%86-%D8%B3%D9%88%D8%B1%D8%B3">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/jadi_image.jpg" class="img-responsive" alt="جادی میرمیرانی گیک قدیمی و فعال جامعهٔ اپن‌سورس" title="جادی میرمیرانی گیک قدیمی و فعال جامعهٔ اپن‌سورس" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> جادی میرمیرانی</h2>
+                                    <p>
+                                        گیک قدیمی و فعال جامعهٔ اپن‌سورس
+                                                                        
+            <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/42/%D9%85%D8%B5%D8%A7%D8%AD%D8%A8%D9%87-%D8%A8%D8%A7-%D8%A7%D9%81%D8%B4%DB%8C%D9%86-%D8%B1%D9%81%D9%88%D8%A2-%D9%85%D8%AF%DB%8C%D8%B1-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DA%AF%D8%A7%D9%87-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%D8%AA%D8%AD%D9%84%DB%8C%D9%84-%D8%AF%D8%A7%D8%AF%D9%87">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/f387f1731e0b17e63e2f2aec58e8720d.jpg" class="img-responsive" alt="افشین رفوآ مدیر آموزشگاه برنامه‌نویسی تحلیل داده" title="افشین رفوآ مدیر آموزشگاه برنامه‌نویسی تحلیل داده" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> افشین رفوآ</h2>
+                                    <p>
+                                        مدیر آموزشگاه برنامه‌نویسی تحلیل
+ داده                                                                   
+                 <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/41/%D9%85%D8%B5%D8%A7%D8%AD%D8%A8%D9%87-%DB%8C-%D8%A8%D8%A7-%D9%81%D8%B1%D8%B2%D8%A7%D9%86%D9%87-%D8%B5%D8%AF%D8%A7%D9%82%D8%AA-%D9%88-%D8%B9%D9%84%DB%8C%D8%B1%D8%B6%D8%A7-%D8%AF%D9%87%D9%84%D9%82%DB%8C-%D8%A7%D8%B2-%D8%B4%D8%B1%DA%A9%D8%AA-%DA%A9%D8%B1%D9%85%D8%A7%D9%86-%D8%AA%D8%A7%D8%A8%D9%84%D9%88-%D9%BE%DB%8C%D8%B1%D8%A7%D9%85%D9%88%D9%86-%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%D9%88-%D8%B5%D9%86%D8%B9%D8%AA">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/020f7a7577e6bc58502bba8d913d006e.jpg" class="img-responsive" alt="فرزانه صداقت و علیرضا دهلقی تیم فنی شرکت کرمان تابلو" title="فرزانه صداقت و علیرضا دهلقی تیم فنی شرکت کرمان تابلو" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> فرزانه صداقت و علیرضا دهلقی</h2>
+                                    <p>
+                                        تیم فنی شرکت کرمان تابلو        
+                                                                        
+    <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/40/%D9%85%D8%B5%D8%A7%D8%AD%D8%A8%D9%87-%D8%A8%D8%A7-%D8%B3%D9%85%DB%8C%D8%B1-%D8%B1%D8%AD%D9%85%D8%A7%D9%86%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3-%D8%A7%D8%B1%D8%B4%D8%AF-%D9%88-%D9%81%D8%B9%D8%A7%D9%84-%D8%AC%D8%A7%D9%85%D8%B9%D9%87-%DB%8C-%D8%A7%D9%BE%D9%86%E2%80%8C%D8%B3%D9%88%D8%B1%D8%B3">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/684078a744d4f21760dbd58c446f613e.jpg" class="img-responsive" alt="سمیر رحمانی برنامه‌نویس ارشد و فعال جامعهٔ اپن‌سورس" title="سمیر رحمانی برنامه‌نویس ارشد و فعال جامعهٔ اپن‌سورس" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> سمیر رحمانی</h2>
+                                    <p>
+                                        برنامه‌نویس ارشد و فعال جامعهٔ 
+اپن‌سورس                                                                
+                    <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                <div class="col-sm-6 col-md-3">
+                        <a href="https://sokanacademy.com/podcast/39/%D9%85%D8%B5%D8%A7%D8%AD%D8%A8%D9%87-%D8%A8%D8%A7-%D8%B3%DB%8C%D8%AF-%D8%AC%D9%85%D8%A7%D9%84-%D8%AD%D8%B3%DB%8C%D9%86%DB%8C-%D9%85%D8%AF%DB%8C%D8%B1-%D8%B9%D8%A7%D9%85%D9%84-%D8%B4%D8%B1%DA%A9%D8%AA-%D9%BE%D8%A7%D8%B1%D8%B3-%D9%BE%DA%A9">
+                            <div class="box newest-podcast">
+                                <div class="newest-podcast-img">
+                                    <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/1eb037e9d6c9ce90d61a7b4313419918.jpg" class="img-responsive" alt="سید جمال حسینی مدیرعامل شرکت پارس پک" title="سید جمال حسینی مدیرعامل شرکت پارس پک" width="450" height="289">
+                                    <h2><i class="fa fa-play-circle-o"></i> سید جمال حسینی</h2>
+                                    <p>
+                                        مدیرعامل شرکت پارس پک           
+                                                                        
+ <span><i class="fa fa-play-circle-o"></i> شنیدن مصاحبه</span>
+                                                                            </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                        <div class="col-sm-6 col-md-3">
+                <a href="#" class="btn-interview">
+                    </a><div class="box newest-podcast"><a href="#" class="btn-interview">
+                        <div class="newest-podcast-img">
+                            <img src="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/podcast-next.png" class="img-responsive" width="450" height="289">
+                            <h2><i class="fa fa-microphone"></i> نفر بعدی ...؟</h2>
+                            <p>
+                                پیشنهاد شما برای مصاحبه با چه کسی است...
+                            </p>
+                        </div>
+                        </a><a class="podcast-play" href="#">
+                            <i class="fa fa-question-circle-o"></i>
+                        </a>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    $('.btn-interview').click(function(e) {
+        e.preventDefault();
+        $('#modal').modal();
+        $('#modal .modal-footer a').attr('href', $(this).attr('href'));
+    });
+</script>
+        </div>
+        <link rel="stylesheet" href="%D8%B1%D8%A7%D8%AF%DB%8C%D9%88%20%D9%81%D9%88%D9%84%E2%80%8C%D8%A7%D8%B3%D8%AA%DA%A9%20::%20%D8%A7%D8%B1%D8%A7%D8%A6%D9%87%D9%94%20%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D8%AF%D8%B1%20%D8%AD%D9%88%D8%B2%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C%D8%8C%20%D8%B4%D8%A8%DA%A9%D9%87%D8%8C%20%D9%87%D9%88%D8%B4%20%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C%D8%8C%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%D8%8C%20%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE%D8%8C%20%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C%20%D9%88_files/styles-footer.css"><script> </script>
+        <footer class="index_footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12" id="footer-nav-links">
+                        <ul>
+                            <li><a href="https://sokanacademy.com/about">دربارهٔ ما</a></li>
+                            <li class="hidden"><a href="https://sokanacademy.com/cooperation">همکاری با ما</a></li>
+                            <li><a href="https://sokanacademy.com/advertisement">تبلیغات</a></li>
+                            <li><a href="https://sokanacademy.com/contact-us">تماس با ما</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row footer-copyright">
+                    © هرگونه کپی‌برداری از محتواهای سکان آکادمی <span class="footer-copyright-alert">غیرمجاز</span> است! <a href="https://sokanacademy.com/terms">(مشاهده قوانین)</a>
+                    <p class="parspack-text">میزبانی شده روی سرورهای کلود <strong><a href="http://parspack.com/" target="_blank">پارس‌پک</a></strong></p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12" id="footer-nav-social-media-links">
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/company/sokan-academy" target="_blank" rel="nofollow">
+                                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/SokanAcademy" target="_blank" rel="nofollow">
+                                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://telegram.me/sokanacademy" target="_blank" rel="nofollow">
+                                    <i class="fa fa-telegram" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Initialize the Google Analytics -->
+        <script>
+	        (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+                })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+                ga('create', 'UA-44076062-1', 'sokanacademy.com');
+                ga('send', 'pageview');
+
+                // enable search btn
+                $(".search").keyup(function() {
+                    $(".search-btn").prop("disabled", true);
+                    $(".search").each(function() {
+                        if (this.value.length > 0) {
+                            $(".search-btn").prop("disabled", false);
+                        }
+                    });
+                });
+        </script>
+    
+
+</body></html>

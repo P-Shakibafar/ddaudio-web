@@ -1,0 +1,94 @@
+/* Bootstrap overrides */
+a {
+	color: #683a5e;
+}
+
+a:hover, a:focus {
+	color: #321a28;
+}
+
+.modal-footer {
+	border-top: none;
+}
+
+.tooltip {
+	font-family: iransans;
+}
+
+.breadcrumb {
+	padding-right: 0px;
+	background: none;
+}
+
+.breadcrumb>.active {
+	color: #888;
+	width: auto;
+}
+
+.breadcrumb>li {
+	display: inline;
+}
+
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover,
+	.pagination>.active>span:hover, .pagination>.active>a:focus,
+	.pagination>.active>span:focus {
+	background: #321a28;
+	border-color: #321a28;
+}
+
+.pagination>li>a, .pagination>li>span {
+	color: #321a28;
+}
+
+.btn-primary {
+	background-color: #321a28;
+	border-color: transparent;
+	box-shadow: 0 2px 4px rgba(26, 27, 30, .2);
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active,
+	.btn-primary.active, .open>.dropdown-toggle.btn-primary {
+	background-color: #683a5e;
+	border-color: #683a5e;
+	color: #fff;
+	outline: 0px;
+}
+
+.btn-default {
+	background-color: #fff;
+	border-color: #683a5e;
+	color: #683a5e;
+	/*box-shadow: 0 2px 4px rgba(26,27,30,.2);*/
+}
+
+.btn {
+	border-radius: 2px;
+	transition: all ease-in-out 0.3s;
+}
+
+.form-control:focus {
+	border-color: #683a5e;
+	box-shadow: none;
+}
+
+.dropdown-menu .divider {
+	margin: 5px 0;
+}
+
+.btn-default:hover, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default
+	{
+	border-color: transparent;
+	background-color: #f3f3f3;
+}
+
+.btn-default:focus, .btn-default.focus {
+	outline: 0;
+	background-color: #fff !important;
+	border-color: #683a5e !important;
+	color: #683a5e !important;
+}
+
+.form-control {
+	box-shadow: none;
+	border-radius: 2px;
+}

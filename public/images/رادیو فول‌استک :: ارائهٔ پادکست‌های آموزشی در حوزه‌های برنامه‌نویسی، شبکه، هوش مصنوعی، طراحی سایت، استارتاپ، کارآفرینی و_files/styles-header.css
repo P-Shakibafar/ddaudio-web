@@ -1,0 +1,438 @@
+/* header */
+
+.main_header {
+    height: auto;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .15);
+    z-index: 6;
+}
+
+.user_navbar ul.dropdown-menu li:last-child {
+    margin-bottom: 5px;
+}
+
+header .header_logo {
+    float: left;
+    margin-top: 11px
+}
+
+header .header_search .input-group {
+    width: 100%;
+    margin-top: 8px;
+}
+
+header .header_search .input-group button {
+    padding: 6px 16px;
+}
+
+header .header_search .input-group button .fa {
+    vertical-align: middle;
+    color: #666;
+    transition: all ease-in-out 0.3s;
+}
+
+header .header_search .input-group button:hover .fa {
+    color: #222;
+}
+
+header .header_search .input-group .btn-default {
+    background-color: #fff;
+    border-color: #ccc;
+    color: #333;
+}
+
+header .header_search .input-group input {
+    background: #f6f8fa;
+}
+
+.modal .header_search .input-group input {
+    border-left-color: #683a5e;
+}
+
+.modal .header_search .fa-search {
+    vertical-align: middle;
+}
+
+header .header_search .input-group input:focus {
+    background: #fff;
+    box-shadow: none;
+    border-color: none;
+}
+
+header .user_btn .btn {
+    margin-top: 8px;
+}
+
+header .fa-list-ul {
+    color: #8f8f8f;
+    font-size: 21px;
+}
+
+header .header_topic_btn {
+    width: 30%;
+    float: right;
+}
+
+header .user_not_set {
+    float: right;
+}
+
+header .user_set {
+    float: right;
+}
+
+header .header_topic_btn .fa {
+    margin-top: 15px;
+}
+
+header .user_navbar .dropdown-menu {
+    right: 0px;
+    left: auto;
+}
+
+header .user_navbar {
+    margin: 0px;
+    padding: 0px;
+    float: right;
+}
+
+header .user_navbar .dropdown>a {
+    padding: 0px;
+    padding-right: 10px;
+    margin-top: 8px;
+}
+
+.user_navbar>li>a:hover, .user_navbar>li>a:focus, .user_navbar .open>a, .user_navbar .open>a:hover, .user_navbar .open>a:focus {
+    background: none;
+}
+
+header .user_navbar .dropdown-menu>li>a {
+    color: #666;
+    font-size: 14px;
+    padding: 6px 15px;
+    text-align: right;
+    transition: all ease-in-out 0.3s;
+}
+
+header .user_navbar .notification_icon_box li a {
+    font-size: 12px;
+    min-height: 37px;
+    padding: 2px 10px;
+    display: block;
+}
+
+.notification_icon_box #no-bookmarks-wrapper {
+    color: #666;
+    padding: 23px;
+}
+
+header .user_navbar .custom-scroll {
+    height: 173px;
+}
+
+header .user_navbar .dropdown-menu>li {
+    transition: all ease-in-out 0.3s;
+}
+
+header .user_navbar .dropdown ul.dropdown-menu {
+    border-radius: 2px;
+    box-shadow: none;
+    margin-top: 26px;
+    padding-bottom: 0px;
+    width: 260px;
+}
+
+header .user_navbar .dropdown ul.dropdown-menu.notification_icon_box {
+    width: 370px;
+    margin-top: 23px;
+}
+
+header .user_navbar .dropdown ul.dropdown-menu:before {
+    content: "";
+    border-bottom: 10px solid #fff;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    top: -10px;
+    right: 16px;
+    z-index: 10;
+}
+
+header .user_navbar .dropdown ul.dropdown-menu:after {
+    content: "";
+    border-bottom: 12px solid #eaeaea;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    position: absolute;
+    top: -12px;
+    right: 14px;
+    z-index: 9;
+}
+
+.user_inside_menu img {
+    margin: 10px auto;
+}
+
+.user_inside_menu #logged-in-user-name {
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.show-more-noti {
+    border-top: 1px solid #e5e5e5;
+    height: 20px;
+    line-height: 32px !important;
+    text-align: center !important;
+}
+
+.user_inside_menu .profile_btn {
+    margin-bottom: 5px;
+    margin-top: 0 !important;
+    padding: 3px 20px;
+}
+
+header .notification_icon {
+    padding: 6px 20px !important;
+}
+
+header .notification_icon .fa-bookmark {
+    font-size: 16px;
+    color: #8f8f8f;
+    margin-top: 4px;
+    vertical-align: middle;
+}
+
+header .notification_icon .fa-plus {
+    font-size: 16px;
+    color: #8f8f8f;
+    margin-top: 4px;
+    vertical-align: middle;
+}
+
+header .notification_icon_box img {
+    float: right;
+}
+
+header .notification_icon_box span {
+    float: right;
+    margin-right: 4px;
+    margin-top: 9px;
+}
+
+header .notification_icon_box .noti_icon {
+    float: left;
+}
+
+header .notification_icon_box .noti_icon .fa-heart {
+    color: #E91E63;
+}
+
+header .notification_icon_box .noti_icon .fa-comment {
+    color: #2196F3;
+}
+
+header .notification_icon_box .noti_icon .fa-user {
+    color: #009688;
+    font-size: 15px;
+}
+
+header .user_small_avatar img {
+    margin-top: 4px;
+}
+
+header .noti_title {
+    color: #222;
+}
+
+.top_header {
+    background: #fff none repeat scroll 0 0;
+    padding-bottom: 8px;
+    position: relative;
+    z-index: 2;
+}
+
+.second_nav {
+    width: 100%;
+    min-height: 30px;
+    background: #321a28;
+    position: absolute;
+    top: 50px;
+    transition: all ease-in-out 0.2s;
+}
+
+.second_nav_hide {
+    top: 15px;
+    z-index: 1;
+}
+
+.second_nav a {
+    color: #fff;
+    padding: 6px 15px;
+}
+
+#header-title {
+    color: #000;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.lang_change {
+    color: #321a28;
+    font-weight: bold;
+    height: 20px;
+    padding: 1px 3px;
+    position: relative;
+    top: 17px;
+    width: 20px;
+    margin-right: 5px;
+    float: left;
+}
+
+.mobile_search_btn {
+    float: right;
+    font-size: 17px;
+    font-weight: normal;
+    height: 30px;
+    margin-right: 10px;
+    margin-top: 12px;
+    padding-top: 4px;
+    text-align: center;
+    width: 30px;
+    cursor: pointer;
+}
+
+.wrapper {
+    height: 30px;
+    padding-top: 5px;
+    text-align: center;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+    -ms-overflow-style: -ms-autohiding-scrollbar !important;
+}
+
+.wrapper::-webkit-scrollbar {
+    background: #321a28;
+    height: 3px;
+}
+
+.header_search {
+    position: relative;
+}
+
+.top-search-res {
+    width: 100%;
+    min-height: 100px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .09);
+    position: absolute;
+}
+
+.top-search-res ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    padding: 5px 0px;
+}
+
+.top-search-res ul a {
+    display: block;
+    color: #333;
+    font-size: 14px;
+    padding: 7px 10px;
+    overflow: auto;
+    font-weight: bold;
+}
+
+.top-search-res ul a:hover {
+    background: #FAFAFA;
+}
+
+.top-search-res ul img {
+    border-radius: 2px;
+    float: right;
+}
+
+.top-search-res ul .fa {
+    vertical-align: middle;
+    color: #888;
+    margin-left: 3px;
+}
+
+.top-search-res ul h5 {
+    float: right;
+    font-size: 13px;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+.top-search-res ul span {
+    font-size: 12px;
+    margin-top: 7px;
+    display: block;
+    color: #888;
+}
+
+.see-more-search {
+    text-align: center;
+    border: none;
+    background: none;
+    border-top: 1px solid #e5e5e5;
+    width: 100%;
+    padding: 10px 0px;
+    box-shadow: none;
+    transition: all ease-in-out 0.3s;
+}
+
+.see-more-search:hover {
+    background: #f5f5f5;
+}
+#header-user-img {
+    border-radius: 100%;
+}
+
+@media (max-width: 767px) {
+    .user_navbar .dropdown ul.dropdown-menu {
+        position: absolute !important;
+        background: #fff !important;
+        border: 1px solid #ccc !important;
+    }
+    .wrapper {
+        margin: 0 auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        width: 95%;
+    }
+    .internal {
+        display: inline !important;
+    }
+    #header-signup-btn, #header-signin-btn {
+        font-size: 12px;
+        font-weight: normal;
+        padding: 4px 5px;
+        float: right;
+        margin-top: 13px;
+    }
+    #header-signin-btn {
+        margin-right: 3px;
+    }
+    .lang_change {
+        float: right;
+        margin-top: 18px;
+        position: static;
+    }
+    .user_navbar>li {
+        float: right;
+    }
+    header .user_navbar .dropdown>a {
+        margin-top: 8px;
+        padding: 0;
+    }
+}
